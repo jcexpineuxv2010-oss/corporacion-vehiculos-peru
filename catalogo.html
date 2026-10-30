@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporación Vehículos Perú | Compra, Venta y Corretaje</title>
+    
+    <!-- FAVICON (Icono de la pestaña) -->
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/logo.png" alt="Corporación Vehículos Perú" draggable="false">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="vende-tu-auto.html">Vende tu Auto</a>
+            <a href="contacto.html" class="active">Contacto</a>
+        </nav>
+        <a href="vende-tu-auto.html" class="btn-primary">Vender mi auto</a>
+    </header>
+
+    <!-- SECCIÓN CATÁLOGO CON FILTROS -->
+    <main style="padding-top: 7rem;">
+        <section class="catalog-section">
+            <h2>Catálogo Exclusivo</h2>
+
+            <!-- BOTONES DE FILTRO -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="Chevrolet">Chevrolet</button>
+                <button class="filter-btn" data-filter="Ford">Ford</button>
+                <button class="filter-btn" data-filter="BMW">BMW</button>
+            </div>
+
+            <div id="grid-autos" class="grid-autos">
+                <!-- Renderizado dinámico desde catalog.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/51913651532?text=Hola%20Corporación%20Vehículos%20Perú,%20deseo%20más%20información%20sobre%20las%20unidades." target="_blank" rel="noopener noreferrer" class="btn-wa-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Corporación Vehículos Perú</h4>
+                    <p>Especialistas en comercialización, exposición digital y corretaje vehicular en todo Lima.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo de Autos</a>
+                    <a href="vende-tu-auto.html">Paquetes para Vendedores</a>
+                    <a href="contacto.html">Contacto Directo</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p><i class="fa-solid fa-phone"></i> +51 913 651 532</p>
+                    <p><i class="fa-solid fa-envelope"></i> vehiculosperucanal@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Lima, Perú</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Corporación Vehículos Perú. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/data-autos.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
